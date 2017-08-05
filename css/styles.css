@@ -1120,4 +1120,6 @@ a:hover {
 .ridon-text {
 	color: white;
 }
-
+.ridon-strikethrough {
+	text-decoration: line-through;
+}
