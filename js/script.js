@@ -61,12 +61,20 @@ var appMaster = {
 
   headerSlider: function () {
     var docHeight = $(window).height()
+    var docWidth = $(window).width()
     var sliderHeight = $('.mh-slider').height()
     var aboutHeight = $('#about').height()
     var logoPadding = (docHeight - sliderHeight - aboutHeight)
+    var mobileFallbackHeight = sliderHeight + aboutHeight + logoPadding;
     if (logoPadding > 120) logoPadding = 120 // 120 is default padding-top on previous version
 
-    $('#slider').height(docHeight + 'px')
+    if (docWidth > 768) {
+      $('.mh-slider').height(docHeight + 'px')
+    } else {
+      $('.mh-slider').height('initial')
+      $('.mh-slider').css('position', 'relative')
+      $('.carousel-control').css('width', 'initial')
+    }
 
     $('img.ridon-logo').css('padding-top', logoPadding + 'px')
 
