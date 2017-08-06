@@ -37,7 +37,7 @@ header.masthead h1, header.masthead h2, header.masthead h3 {
   color: white;
 }
 header.masthead .mh-slider {
-  position: relative;
+  position: absolute;
   bottom: 0;
   top: auto;
 }
@@ -1114,7 +1114,6 @@ a:hover {
 }
 
 .ridon-logo {
-	padding-top: 120px;
     padding-bottom: 50px;
 }
 .ridon-text {
