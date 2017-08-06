@@ -66,6 +66,7 @@ var appMaster = {
         var sliderHeight = $('.mh-slider').height();
         var aboutHeight = $('#about').height();
         var logoPadding = (docHeight - sliderHeight - aboutHeight);
+        if (logoPadding > 120) logoPadding = 120; // 120 is default padding-top on previous version
         
         $("#slider").height(docHeight + "px");
 
