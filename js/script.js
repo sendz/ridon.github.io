@@ -68,9 +68,7 @@ var appMaster = {
     var mobileFallbackHeight = sliderHeight + aboutHeight + logoPadding;
     if (logoPadding > 120) logoPadding = 120 // 120 is default padding-top on previous version
 
-    if (docWidth > 768) {
-      $('.mh-slider').height(docHeight + 'px')
-    } else {
+    if (docWidth < 768) {
       $('.mh-slider').height('initial')
       $('.mh-slider').css('position', 'relative')
       $('.carousel-control').css('width', 'initial')
