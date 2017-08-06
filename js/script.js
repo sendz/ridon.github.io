@@ -74,6 +74,7 @@ var appMaster = {
       $('.mh-slider').height('initial')
       $('.mh-slider').css('position', 'relative')
       $('.carousel-control').css('width', 'initial')
+      logoPadding = 20
     }
 
     $('img.ridon-logo').css('padding-top', logoPadding + 'px')
