@@ -63,8 +63,14 @@ var appMaster = {
     headerSlider: function(){
 
         var docHeight = $(window).height();
+        var sliderHeight = $('.mh-slider').height();
+        var aboutHeight = $('#about').height();
+        var logoPadding = (docHeight - sliderHeight - aboutHeight);
+        if (logoPadding > 120) logoPadding = 120; // 120 is default padding-top on previous version
         
         $("#slider").height(docHeight + "px");
+
+        $("img.ridon-logo").css("padding-top", logoPadding + "px");
 
         $('.mh-container').height(docHeight + "px");
 
