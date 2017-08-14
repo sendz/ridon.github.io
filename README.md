@@ -15,4 +15,6 @@ Langkah selanjutnya adalah sebagai berikut:
 
 Untuk mulai memodifikasi 'styling' dan 'scripting', pastikan anda mengubah berkas berkas yang ada pada direktori `source`. Selain itu, anda bisa mengubah konten yang ada pada berkas index.html
 
-Untuk mengunggah dan menjalankan, gunakan perintah `gulp deploy`
+### Unggah dan Jalankan
+
+Untuk mengunggah dan menjalankan, gunakan perintah `gulp deploy` dengan tujuan untuk mengkompilasi semua perubahan yang terjadi di direktori `source`. Pastikan semua pekerjaan sudah selesai dan siap untuk diunggah.
