@@ -13,7 +13,7 @@ var deploy = require('gulp-gh-pages')
 gulp.task('default', ['watch', 'copy-fonts', 'copy-images', 'build-js'])
 
 gulp.task('deploy', ['build-css', 'build-js', 'copy-fonts', 'copy-images'], function () {
-  return gulp.src('assets/**/*')
+  return gulp.src('.')
     .pipe(deploy({origin: 'origin', branch: 'gh-pages'}))
 })
 
