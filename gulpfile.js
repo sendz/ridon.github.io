@@ -56,7 +56,9 @@ gulp.task('copy-images', function () {
 })
 
 gulp.task('watch', function() {
-  gulp.watch('source/js/**/*.js', ['jshint'])
+  // gulp.watch('source/js/**/*.js', ['jshint'])
+  gulp.watch('gulpfile.config.js', ['build-js'])
+  gulp.watch('source/js/**/*.js', ['build-js'])
   gulp.watch('source/sass/**/*.scss', ['build-css'])
   gulp.watch('source/fonts/*', ['copy-fonts'])
   gulp.watch('source/img/*', ['copy-images'])
