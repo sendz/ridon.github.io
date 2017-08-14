@@ -15,6 +15,10 @@ Langkah selanjutnya adalah sebagai berikut:
 
 Untuk mulai memodifikasi 'styling' dan 'scripting', pastikan anda mengubah berkas berkas yang ada pada direktori `source`. Selain itu, anda bisa mengubah konten yang ada pada berkas index.html
 
-### Unggah dan Jalankan
+### Unggah dan Pull Request
 
-Untuk mengunggah dan menjalankan, gunakan perintah `gulp deploy` dengan tujuan untuk mengkompilasi semua perubahan yang terjadi di direktori `source`. Pastikan semua pekerjaan sudah selesai dan siap untuk diunggah.
+Unggah perubahan ke branch baru dengan format `username/branch-name` dan lakukan Pull Request ke branch `development`, sertakan nama-nama berikut sebagai reviewer:
+- sendz
+- princeofgiri
+- cho2
+Setelah Pull Request digabung, maka kami akan menjalankan deploy script.
