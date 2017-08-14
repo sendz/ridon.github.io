@@ -14,7 +14,7 @@ gulp.task('default', ['watch', 'copy-fonts', 'copy-images', 'build-js'])
 
 gulp.task('deploy', ['build-css', 'build-js', 'copy-fonts', 'copy-images'], function () {
   return gulp.src('assets/**/*')
-    .pipe(deploy({remoteUrl: 'git@github.com:ridon/ridon.github.io.git', branch: 'master'}))
+    .pipe(deploy({origin: 'origin', branch: 'gh-pages'}))
 })
 
 gulp.task('jshint', function() {
