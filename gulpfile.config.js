@@ -2,9 +2,9 @@ module.exports = {
   css: [],
   js: [
     './source/js/modernizr.custom.32033.js',
-    './source/js/velocity.min.js',
     './source/js/jquery-3.2.1.js',
     './source/js/jquery.easing.1.4.js',
+    './source/js/velocity.min.js',
     './source/js/hammer.min.js',
     './source/js/jquery.hammer.js',
     './source/js/initial.js',
