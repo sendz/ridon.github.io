@@ -21,4 +21,5 @@ Unggah perubahan ke branch baru dengan format `username/branch-name` dan lakukan
 - sendz
 - princeofgiri
 - cho2
+
 Setelah Pull Request digabung, maka kami akan menjalankan deploy script.
